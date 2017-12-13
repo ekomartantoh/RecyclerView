@@ -20,13 +20,13 @@
             android:orientation="vertical">
 
             <EditText
-                android:id="@+id/Nm_Brg"
+                android:id="@+id/edt_Nm_Brg"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Nama Barang" />
 
             <EditText
-                android:id="@+id/Hrg"
+                android:id="@+id/edt_Hrg"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Harga" />
@@ -36,10 +36,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
-            android:text="Add" />
+            android:text="Add"
+            android:onClick="tambah_barang"/>
     </LinearLayout>
 
     <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvItm"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:padding="15dp" />
